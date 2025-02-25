@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oussoud Wahrane Câbles Électrique</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/LOGO CABLE ORANGE.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <meta name="description" content="Achetez des fils et câbles électriques de haute qualité en Algérie chez Oussoud Wahrane. Livraison rapide et prix compétitifs.">
+    <meta name="keywords" content="fils électriques, câbles électriques, cuivre nu, Oussoud Wahrane, Algérie,Oran, câbles électriques en Algérie, fils électriques en Algérie, cuivre nu en Algérie">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body class="overflow-x-hidden max-w-screen">
+    <div id="loading-overlay">
+        <img src="./img/LOGO CABLE BLEU 2.png" alt="Loading..." id="loading-logo">
+    </div>
+    <section class="home" id="home">
+      <div class="overlay"></div>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="container" data-aos="fade-down" data-aos-delay="4000" data-aos-duration="1000">
+                <!-- Menu Button -->
+                <i class="fa-solid fa-bars btn-menu" id="menu-icon"></i>
+
+                <!-- Navigation Menu --> 
+                <ul class="nav-links">
+                    <i class="fa-solid fa-x btn-close" id="close-icon"></i>
+                    <li><a href="#home" data-aos="fade-right" data-aos-delay="600">Accueil</a></li>
+                    <li><a href="#about" data-aos="fade-right" data-aos-delay="800">A propos</a></li>
+
+                    <li>
+                      <a href="#" id="produits-item" data-aos="fade-right" data-aos-delay="1000" onclick="toggleSubList()">Produits</a>
+                      <ul id="subList">
+                        <a href="cables.html" target="_blank"><li>Cables</li></a>
+                        <a href="fils.html" target="_blank"><li>Fils</li></a>
+                        <a href="cuivre.html" target="_blank"><li>Cuivre</li></a>                        
+                      </ul>
+                    </li>
+                </ul>
+                <div class="logo">
+                    <img src="./img/LOGO CABLE ORANGE.png" alt="Logo">
+                </div>
+
+                <!-- Right Contact Button -->
+                <ul class="contact-btn">
+                    <li>
+                        <a href="#contact" class="contact-button" data-aos="fade-left" data-aos-delay="600">
+                            <button class="font-sans flex justify-center gap-2 items-center mx-auto shadow-xl text-lg text-white bg-[#FF6A00] backdrop-blur-md lg:font-semibold isolation-auto before:absolute before:w-full before:transition-all before:duration-500 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#004A7C] hover:text-white before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-500 relative z-10 px-4 py-2 overflow-hidden border-2 border-[#2C3E50] rounded-full group" type="submit">
+                                Contactez-nous
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 19" class="w-8 h-8 justify-end bg-white group-hover:rotate-180 group-hover:bg-[#004A7C] text-[#004A7C] ease-linear duration-300 rounded-full border border-[#2C3E50] group-hover:border-none p-2 rotate-45">
+                                    <path class="fill-[#2C3E50] group-hover:fill-white" d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"></path>
+                                </svg>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero flex flex-col items-center md:items-start text-center md:text-left px-4 sm:px-6 md:px-12 lg:px-20 py-20 md:py-28 lg:py-36">
+            <h1 class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-extrabold leading-tight animate__animated animate__fadeInDown" data-aos="fade-down">
+                Bienvenue à <br> Oussoud Wahrane <br> Câbles Électrique
+            </h1>
+            <p class="mt-6 font-serif text-base sm:text-lg md:text-l lg:text-l text-gray-200 max-w-xs sm:max-w-md md:max-w-2xl" data-aos="fade-left" data-aos-duration="1000">
+                Optez pour des câbles électriques <span class="text-orange-400 font-medium">performants et sécurisés</span>, 
+                conçus pour une transmission d’énergie fiable pour tous vos projets.
+            </p>
+            <a href="#products" class="mt-8" data-aos="fade-right" data-aos-duration="1400">
+                <button class="btn-white shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 duration-300">
+                    Découvrir Nos Produits
+                </button>
+            </a>
+        </section>
+
+        <hr>
+        <p class="subtitle pb-3 px-1" data-aos="zoom-in" data-aos-duration="1600">
+            <strong>Nos Engagements :</strong> Qualité, sécurité et conformité aux normes pour répondre aux exigences des professionnels et industriels.
+          </p> 
+
+    </section>
+    
+    
+    
+    <section class="about-section" id="about">
+          <h1 class="m-10" style="padding: .5rem 0;" data-aos="fade-right" data-aos-duration="1200">
+            Qui sommes-nous ?
+          </h1>
+          <div class="bg-gray-100/20 p-4 my-4 sm:p-6 md:p-8 rounded-lg shadow-lg w-[360px] sm:w-fit md:max-w-3xl"
+          data-aos="fade-up" data-aos-duration="1000">
+         
+         <p class="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
+             <!-- Texte court avec bouton "Voir plus" -->
+             <span id="short-text">
+                 <span class="text-orange-500 font-semibold">Oussoud Wahrane Câbles Électrique</span> est une société algérienne...
+                 <button id="see-more-btn" class="text-blue-500 font-semibold underline hover:text-blue-700 transition-colors">Voir plus...</button>
+             </span>
+             
+             <!-- Texte complet caché par défaut -->
+             <div id="full-text" class="hidden"> <!-- Changed from span to div -->
+                 <ul class="list-disc list-inside space-y-2">
+                     <li><span class="text-orange-500 font-semibold">Oussoud Wahrane Câbles Électrique</span> est une société algérienne spécialisée dans la fabrication et la commercialisation de <span class="text-orange-500 font-semibold">câbles électriques</span> et téléphoniques.</li>
+                     <li>Basée à la <span class="text-orange-500 font-semibold">zone industrielle de Bethioua, Oran</span>, elle propose des solutions robustes pour divers usages :
+                         <ul class="list-disc list-inside ml-6 mt-1">
+                             <li><span class="text-orange-500 font-semibold">Domestique</span></li>
+                             <li><span class="text-orange-500 font-semibold">Industriel</span></li>
+                             <li><span class="text-orange-500 font-semibold">Télécommunications</span></li>
+                         </ul>
+                     </li>
+                     <li>Numéro d'enregistrement : <span class="text-orange-500 font-semibold">17B1122208</span></li>
+                     <li>Produits fabriqués :
+                         <ul class="list-disc list-inside ml-6 mt-1">
+                             <li><span class="text-orange-500 font-semibold">Fils</span></li>
+                             <li><span class="text-orange-500 font-semibold">Câbles électriques</span></li>
+                             <li><span class="text-orange-500 font-semibold">Câbles isolés</span></li>
+                             <li><span class="text-orange-500 font-semibold">Câbles blindés</span></li>
+                             <li><span class="text-orange-500 font-semibold">Câbles coaxiaux</span></li>
+                         </ul>
+                     </li>
+                     <li>Capital : <span class="text-orange-500 font-semibold">20 100 000 DA</span></li>
+                     <li>Conformité aux normes de <span class="text-orange-500 font-semibold">qualité</span> et <span class="text-orange-500 font-semibold">sécurité</span>.</li>
+                 </ul>
+                 <button id="see-less-btn" class="text-blue-500 font-semibold underline mt-2 hover:text-blue-700 transition-colors">Voir moins</button>
+             </div>
+         </p>
+     </div>
+          
+        <main class="boxes">
+            <div class="box box1">
+                <i class="fa-solid fa-building" style="color: #f66b03;" data-aos="fade-down" data-aos-duration="1000" ></i>
+                <h2 class="title p-2  [padding-block:2.5rem] text-[rgb(13,73,142)] text-center" data-aos="fade-down" data-aos-duration="1000">
+                    Notre usine d'une grande superficie et une chaîne de production automatisée, nous pouvons fabriquer des quantités massives tout en garantissant une qualité optimale
+                </h2>
+                <img src="./img/Ossod-hangar-pc.jpeg" alt="" data-aos="fade-down" data-aos-duration="1400">
+            </div>
+            <div class="box box2">
+                <i class="fa-solid fa-map-pin" style="color: #f76b03;" data-aos="fade-down" data-aos-duration="1000"></i>
+                <h1 data-aos="fade-left" data-aos-duration="1400">Section 09 iLot 225 <br> Betioua - Oran - Algérie</h1>
+                <div class="map" data-aos="fade-down" data-aos-duration="1400">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4229.517836491755!2d-0.22325711628768496!3d35.76815186681632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7e0f00567b49b3%3A0x869889bab008227e!2sSARL%20oussoud%20Wahran!5e0!3m2!1sfr!2sdz!4v1739032739012!5m2!1sfr!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+            </div>
+            <div class="box box3">
+                <i class="fa-regular fa-comment" style="color: #f76b03;" data-aos="fade-down" data-aos-duration="1000"></i>
+                <section id="testimonials">
+                    <h2 data-aos="fade-left" data-aos-duration="1400">Feedbacks</h2>
+                        <button class="btn-box" data-aos="fade-left" data-aos-duration="1400"><a href="https://www.google.com/maps/place/SARL+oussoud+Wahran/@35.76838,-0.220388,17z/data=!4m18!1m9!3m8!1s0xd7e0f00567b49b3:0x869889bab008227e!2sSARL+oussoud+Wahran!8m2!3d35.76838!4d-0.220388!9m1!1b1!16s%2Fg%2F11vyby45v4!3m7!1s0xd7e0f00567b49b3:0x869889bab008227e!8m2!3d35.76838!4d-0.220388!9m1!1b1!16s%2Fg%2F11vyby45v4?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D">
+                            votre feedback</a></button>
+                <a data-aos="fade-down" data-aos-duration="1400" href="https://www.google.com/maps/place/SARL+oussoud+Wahran/@35.76838,-0.220388,17z/data=!4m18!1m9!3m8!1s0xd7e0f00567b49b3:0x869889bab008227e!2sSARL+oussoud+Wahran!8m2!3d35.76838!4d-0.220388!9m1!1b1!16s%2Fg%2F11vyby45v4!3m7!1s0xd7e0f00567b49b3:0x869889bab008227e!8m2!3d35.76838!4d-0.220388!9m1!1b1!16s%2Fg%2F11vyby45v4?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D">
+                  <img src="./img/avis-maps.jpg" alt="avis" id="avisMap">
+                </a>
+                </section>
+            </div>
+        </main>
+        <a href="./NV  fiche techenique.docx" download="./NV  fiche techenique.docx" class="animated-button1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Notre fiche technique
+          </a>
+    
+          </section>    
+          <!--  services carousel -->
+          <section class="services relative bg-gradient-to-r from-slate-200 via-white to-white bg-cover bg-center bg-no-repeat py-12" data-aos="zoom-in" data-aos-duration="1300">
+            <img src="./img/undraw_bookmarks_i66k.png" alt="undrwar about us" class="undraw absolute bottom-2 left-96 h-auto -z-1" data-aos="fade-right" data-aos-duration="1200" style="opacity: 0.1;" />
+            <h1 class="services-title text-2xl font-bold text-left text-[rgb(13,73,142)] my-4 ml-32 z-10" data-aos="fade-right" data-aos-duration="1200">
+              Pourquoi nous choisir ?
+            </h1>
+            <div class=" rounded-md relative flex flex-col items-center justify-center w-full max-w-5xl mx-auto my-16" data-aos="fade-up" data-aos-duration="1200">
+              <div class="relative overflow-hidden w-full rounded-xl  ">
+                <div
+                  class="flex transition-transform duration-500 ease-in-out"
+                  id="carousel"
+                >
+                  <!-- Slide 1 -->
+                  <div class="flex-shrink-0 w-full px-8 flex flex-col items-center text-center py-8" data-aos="fade-down" data-aos-duration="1600">
+                    <img
+                      src="img/fils-electric.jpg"
+                      alt="Câbles de haute qualité"
+                      class="w-1/4 h-auto rounded-lg shadow-md mb-6"
+                    />
+                    <h3 class="text-2xl font-bold text-gray-800">Câbles et fils de haute qualité</h3>
+                    <p class="mt-4 text-gray-600" animate__animated animate__lightSpeedInRight>
+                      Nos câbles assurent une performance optimale et une durabilité
+                      exceptionnelle. <br><small>1/3</small>
+                    </p>
+                  </div>
+          
+                  <!-- Slide 2 -->
+                  <div class="flex-shrink-0 w-full px-8 flex flex-col items-center text-center py-8 data-aos="fade-down" data-aos-duration="1600"">
+                    <img
+                      src="img/ready-to-delivery.jpg"
+                      alt="Livraison rapide"
+                      class="w-1/4 h-auto rounded-lg shadow-md mb-6"
+                    />
+                    <h3 class="text-2xl font-bold text-gray-800">Livraison rapide</h3>
+                    <p class="mt-4 text-gray-600" animate__animated animate__lightSpeedInRight>
+                      Nous livrons rapidement de grandes quantités avec une logistique
+                      efficace. <br><small>2/3</small>
+                    </p>
+                  </div>
+          
+                  <!-- Slide 3 -->
+                  <div class="flex-shrink-0 w-full px-8 flex flex-col items-center text-center py-8 data-aos="fade-down" data-aos-duration="1600"">
+                    <img
+                      src="img/cables-in-water.jpg"
+                      alt="Équipe expérimentée"
+                      class="w-1/4 h-auto rounded-lg shadow-md mb-6"
+                    />
+                    <h3 class="text-2xl font-bold text-gray-800">Équipe expérimentée</h3>
+                    <p class="mt-4 text-gray-600" animate__animated animate__lightSpeedInRight>
+                      Nous collaborons avec des leaders industriels pour garantir la
+                      meilleure qualité.
+                        <br><small>3/3</small>
+                    </p>
+                  </div>
+                </div>
+                <div class="flesh absolute flex top-[36%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-[300px]" >
+                    <button
+                      class="bg-slate-200 p-4 rounded-full shadow-md hover:bg-[#f76b03] hover:text-white transition-all duration-300 focus:ring-4 focus:ring-orange-400"
+                      onclick="prevSlide()"
+                    >
+                    <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button
+                      class="bg-slate-200 p-4 rounded-full shadow-md hover:bg-[#f76b03] hover:text-white transition-all duration-300 focus:ring-4 focus:ring-orange-400"
+                      onclick="nextSlide()"
+                    >
+                    <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+              </div>              
+            </div>
+          </section>
+          <section id="products" class="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-12 px-4 sm:px-6 lg:px-8">
+            <div class="w-[14rem] sm:w-full sm:max-w-4xl md:w-full md:max-w-4xl lg:w-full lg:max-w-7xl mx-auto">
+
+                <h1 class="text-3xl sm:text-4xl font-bold text-center mb-8 text-white/90 tracking-tight">
+                    Nos produits
+                </h1>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-[700px] mx-auto">
+                    <!-- First Card -->
+                    <div class="relative group m-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="h-full bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-blue-400/30 transition-all duration-300 shadow-lg hover:shadow-blue-500/20">
+                            <div class="relative aspect-square overflow-hidden rounded-lg">
+                                <img src="./img/fils-electriques-lm.png" alt="Fils électriques" 
+                                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white mt-4 mb-2">Fils électriques</h3>
+                            <a href="fils.html" class="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
+                                Voir produits
+                                <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <!-- Second Card -->
+                    <div class="relative group m-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="h-full bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-blue-400/30 transition-all duration-300 shadow-lg hover:shadow-blue-500/20">
+                            <div class="relative aspect-square overflow-hidden rounded-lg">
+                                <img src="./img/big-to-cable.jpg" alt="Câbles Électriques" 
+                                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white mt-4 mb-2">Câbles Électriques</h3>
+                            <a href="cables.html" class="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
+                                Voir produits
+                                <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <!-- Third Card -->
+                    <div class="relative group m-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="h-full bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 hover:border-blue-400/30 transition-all duration-300 shadow-lg hover:shadow-blue-500/20">
+                            <div class="relative aspect-square overflow-hidden rounded-lg">
+                                <img src="./img/H8edafb286a6b458286be838280db79f8q.avif" alt="Cuivre Nu" 
+                                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                            </div>
+                            <h3 class="text-lg font-semibold text-white mt-4 mb-2">Cuivre Nu</h3>
+                            <a href="cuivre.html" class="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
+                                Voir produits
+                                <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+          <section class="p-6 md:p-10">
+            <!-- Section Title -->
+            <h2 class="text-2xl md:text-3xl font-extrabold text-[rgb(13,73,142)] uppercase text-center mb-8 tracking-wide">
+                Galerie de Photos
+            </h2>
+        
+            <!-- Responsive Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Image Cards -->
+                <article class="relative group overflow-hidden rounded-lg shadow-xl">
+                    <img src="./img/Ossod-hangar-pc.jpeg" alt="Usine Oussoud Wahrane"
+                        class="w-full h-auto aspect-video object-cover transition-all duration-500 group-hover:brightness-50">
+                    <div
+                        class="absolute inset-0 bg-blue-950/60 flex items-center justify-center transition-all duration-500 group-hover:bg-transparent">
+                        <img src="./img/LOGO CABLE ORANGE.png" alt="Oussoud Logo"
+                            class="w-1/2 transition-all duration-500 group-hover:opacity-0">
+                    </div>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <h2 class="text-lg font-bold text-white text-center">Hangar de Production</h2>
+                    </div>
+                </article>
+        
+                <article class="relative group overflow-hidden rounded-lg shadow-xl">
+                    <img src="./img/history-1.jpg" alt="Câbles électriques"
+                        class="w-full h-auto aspect-video object-cover transition-all duration-500 group-hover:brightness-50">
+                    <div
+                        class="absolute inset-0 bg-blue-950/60 flex items-center justify-center transition-all duration-500 group-hover:bg-transparent">
+                        <img src="./img/LOGO CABLE ORANGE.png" alt="Oussoud Logo"
+                            class="w-1/2 transition-all duration-500 group-hover:opacity-0">
+                    </div>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <h2 class="text-lg font-bold text-white text-center">Fabrication de Câbles</h2>
+                    </div>
+                </article>
+        
+                <article class="relative group overflow-hidden rounded-lg shadow-xl">
+                    <img src="./img/history-2.jpg" alt="Fabrication des fils"
+                        class="w-full h-auto aspect-video object-cover transition-all duration-500 group-hover:brightness-50">
+                    <div
+                        class="absolute inset-0 bg-blue-950/60 flex items-center justify-center transition-all duration-500 group-hover:bg-transparent">
+                        <img src="./img/LOGO CABLE ORANGE.png" alt="Oussoud Logo"
+                            class="w-1/2 transition-all duration-500 group-hover:opacity-0">
+                    </div>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <h2 class="text-lg font-bold text-white text-center">Technologie de Production</h2>
+                    </div>
+                </article>
+        
+                <article class="relative group overflow-hidden rounded-lg shadow-xl">
+                    <img src="./img/history-3.jpg" alt="Technologie de production"
+                        class="w-full h-auto aspect-video object-cover transition-all duration-500 group-hover:brightness-50">
+                    <div
+                        class="absolute inset-0 bg-blue-950/60 flex items-center justify-center transition-all duration-500 group-hover:bg-transparent">
+                        <img src="./img/LOGO CABLE ORANGE.png" alt="Oussoud Logo"
+                            class="w-1/2 transition-all duration-500 group-hover:opacity-0">
+                    </div>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <h2 class="text-lg font-bold text-white text-center">Processus en cours</h2>
+                    </div>
+                </article>
+        
+                <article class="relative group overflow-hidden rounded-lg shadow-xl">
+                    <img src="./img/history-4.jpg" alt="Qualité et contrôle"
+                        class="w-full h-auto aspect-video object-cover transition-all duration-500 group-hover:brightness-50">
+                    <div
+                        class="absolute inset-0 bg-blue-950/60 flex items-center justify-center transition-all duration-500 group-hover:bg-transparent">
+                        <img src="./img/LOGO CABLE ORANGE.png" alt="Oussoud Logo"
+                            class="w-1/2 transition-all duration-500 group-hover:opacity-0">
+                    </div>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <h2 class="text-lg font-bold text-white text-center">Stockage des Câbles</h2>
+                    </div>
+                </article>
+        
+                <article class="relative group overflow-hidden rounded-lg shadow-xl">
+                    <img src="./img/machide-de-cuivre.jpg" alt="Nouvelle Installation"
+                        class="w-full h-auto aspect-video object-cover transition-all duration-500 group-hover:brightness-50">
+                    <div
+                        class="absolute inset-0 bg-blue-950/60 flex items-center justify-center transition-all duration-500 group-hover:bg-transparent">
+                        <img src="./img/LOGO CABLE ORANGE.png" alt="Oussoud Logo"
+                            class="w-1/2 transition-all duration-500 group-hover:opacity-0">
+                    </div>
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        <h2 class="text-lg font-bold text-white text-center">Cuivre machine</h2>
+                    </div>
+                </article>
+            </div>
+        
+            
+        </section>
+        
+    
+          <section class="contact relative h-[100vh] bg-orange-600 flex justify-around" id="contact">
+            <div class="text mt-24" data-aos="fade-left" data-aos-duration="1200" style="color: white;">
+                <h1 class="contact-title text-5xl mx-8">Contactez-nous</h1>
+                <small><p class="contact-subtitle ml-16" style="color: rgb(255, 223, 163);">Un lien direct pour éclairer vos projets</p></small>
+                 <div class="contact-info my-10 mx-12 flex flex-col items-start justify-center gap-4">
+                                    <div class="phone flex items-center">
+                                    <a href="tel:+213770313381">
+                                    <i class="fa-solid fa-phone text-blue-400 mx-3 animate-bounce"></i>
+                                    +213 770 31 33 81 | +213 550 16 08 25
+                                    </a>
+                                    </div>
+
+                                    <div class="map flex items-center mx-4">
+                                        <a href="https://www.google.com/maps/place/SARL+oussoud+Wahran/@35.76838,-0.220388,17z/data=!3m1!4b1!4m6!3m5!1s0xd7e0f00567b49b3:0x869889bab008227e!8m2!3d35.76838!4d-0.220388!16s%2Fg%2F11vyby45v4?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D"
+                                         target="_blank"><i class="fa-solid fa-location-dot animate-bounce text-yellow-300"></i></a>
+                                        <p class="mx-4">Section 09 iLot 225
+                                            Betioua - Oran - Algérie</p>
+                                    </div>
+
+                                    <div class="gmail flex items-center mx-4">
+                                        <a href="mailto:oussoudwahrane.cable@gmail.com"><i class="fa-brands fa-google animate-bounce text-purple-500 ">
+                                        </i><span class="mx-2"></span>oussoudwahrane.cable@gmail.com</a>
+                                    </div>
+
+                                    <div class="more-infos flex flex-col mx-4 text-orange-300 ">
+                                        <a href="cables.html" class="hover:text-blue-400"><i class="fa-solid fa-bolt text-orange-300 hover:text-yellow-400 "></i> nos cables</a>
+                                        <a href="fils.html" class="hover:text-blue-400"><i class="fa-solid fa-bolt text-orange-300 hover:text-yellow-400"></i> nos fils </a>
+                                        <a href="cuivre.html" class="hover:text-blue-400"><i class="fa-solid fa-bolt text-orange-300 hover:text-yellow-400"></i> nos cuivre </a>
+                                    </div>
+                                    
+                </div>
+            </div>
+                                <div class="images flex flex-col justify-center items-center w-1/4 h-fit -z-1 my-auto" data-aos="fade-right" data-aos-duration="1200" style="opacity: 1;">
+                                    <img src="./img/mail-sent.png" alt="illustration of a man trying to contact">
+                                    <div class="socials flex items-center mx-4">
+                                        <ul class="wrapper">
+                                            <li class="icon facebook">
+                                                <a href="https://web.facebook.com/profile.php?id=61572931412151&locale=fr_FR" target="_blank">
+                                                    <span class="tooltip">Facebook</span>
+                                            <svg
+                                                viewBox="0 0 320 512"
+                                                height="1.2em"
+                                                fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                                                ></path>
+                                            </svg>
+                                                </a>
+                                            
+                                            </li>
+                                            <li class="icon instagram">
+                                                <a href="https://www.instagram.com/oussoud_wahrane/" target="_blank">
+                                                    <span class="tooltip">Instagram</span>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                height="1.2em"
+                                                fill="currentColor"
+                                                class="bi bi-instagram"
+                                                viewBox="0 0 16 16"
+                                            >
+                                                <path
+                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                                                ></path>
+                                            </svg>
+                                                </a>
+                                            
+                                            </li>
+                                        </ul>
+
+                                </div>
+                                </div>
+          </section>
+          <footer class="bg-blue-950 text-center py-4">
+            <p class="text-gray-400">&copy; 2025 Oussoud Wahrane Câbles Électrique. Tous droits réservés.</p>
+        </footer>
+          
+    <!-- JavaScript -->
+    <script src="cables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Global animation duration
+            once: false, // Animations will only happen once
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    
+</body>
+
+</html>
