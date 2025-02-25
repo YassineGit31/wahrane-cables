@@ -52,7 +52,8 @@
             </div>
     
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="fixed inset-0 bg-blue-950 hidden items-center justify-center space-y-6 text-white text-xl">
+            <div id="mobile-menu" class="fixed inset-0 w-screen h-screen bg-blue-950 items-center justify-center space-y-6 text-white text-xl opacity-0 translate-x-full transition-all duration-300 ease-in-out z-[9999]">
+
                 <button id="close-menu" class="absolute top-5 right-5 text-3xl">&times;</button>
                 
                 <a href="index.html" class="nav-link w-full text-center py-3 border-b border-gray-700 hover:bg-gray-700 transition duration-300">Accueil</a>
@@ -199,7 +200,6 @@ closeMenu.addEventListener("click", () => {
     mobileMenu.classList.add("opacity-0", "translate-x-full");
     mobileMenu.classList.remove("opacity-100", "translate-x-0");
 });
-
 
                 AOS.init({
                     duration: 1000, // Global animation duration
